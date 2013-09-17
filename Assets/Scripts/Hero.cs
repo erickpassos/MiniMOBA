@@ -28,7 +28,6 @@ public class Hero : MonoBehaviour
 		}
 		c = GetComponent<Character> ();
 		charController = GetComponent<CharacterController> ();
-		serverCurrentClick = transform.position;
 	}
 
 	[RPC]
@@ -71,15 +70,16 @@ public class Hero : MonoBehaviour
 		if (Network.isServer) {
 			gunTime -= Time.deltaTime;
 			if (target == null) {
-				transform.LookAt (serverCurrentClick);
-				Vector3 euler = transform.localEulerAngles;
-				euler.x = 0;
-				euler.z = 0;
-				transform.localEulerAngles = euler;
 				float distance = (serverCurrentClick - transform.position).magnitude;
-				if (distance > 1) {
+				if (serverCurrentClick != Vector3.zero && distance > 1) {
+					transform.LookAt (serverCurrentClick);
+					Vector3 euler = transform.localEulerAngles;
+					euler.x = 0;
+					euler.z = 0;
+					transform.localEulerAngles = euler;
 					movement = transform.TransformDirection (Vector3.forward) * 5 - Vector3.up * 10;
-				} else {
+				}
+				else {
 					movement = Vector3.zero - Vector3.up * 10;
 				}
 			} else {
