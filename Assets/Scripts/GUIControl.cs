@@ -9,9 +9,9 @@ public class GUIControl : MonoBehaviour {
 		}
 		else {
 			if (Character.victoriousTeam == 'v')
-				guiText.text = Character.killsA + " x " + Character.killsB +"\nVolante Won";
+				guiText.text = Character.killsA + " x " + Character.killsB +"\nTeam B Won";
 			else {
-				guiText.text = Character.killsA + " x " + Character.killsB +"\nCangaceiros Won";
+				guiText.text = Character.killsA + " x " + Character.killsB +"\nTeam A Won";
 			}
 		}
 	}
