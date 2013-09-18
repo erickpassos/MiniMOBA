@@ -108,6 +108,8 @@ public class Character : MonoBehaviour
 	// Health Bar (all) and level (hero only)
 	void OnGUI ()
 	{
+		if (GameManager.paused)
+			return;
 		GUI.skin = skin;
 		GUI.depth = 3;
 

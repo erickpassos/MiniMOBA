@@ -18,12 +18,19 @@ public class GameManager : MonoBehaviour
 	public Waypoint spawnA;
 	public Waypoint spawnB;
 	
+	public static bool paused = true;
+	
 	public List<Hero> playerScripts = new List<Hero> ();
 	private int charNumber = 0;
 	public static int players = 0;
 	private int playersConnected = 0;
 	private NetworkPlayer[] networkPlayers;
  	private bool init = false;
+	
+	void Start() {
+		paused = true;
+	}
+	
 	void OnServerInitialized ()
 	{
 		networkPlayers = new NetworkPlayer[players];
@@ -34,6 +41,7 @@ public class GameManager : MonoBehaviour
 	}
 	
 	private void InitGame() {
+		paused = false;
 		int count = 0;
 		init = true;
 		foreach(NetworkPlayer player in networkPlayers) {
