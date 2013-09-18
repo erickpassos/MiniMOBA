@@ -55,6 +55,7 @@ public class Character : MonoBehaviour
 		this.xp += xp;
 		if (level < 10 && this.xp >= 5) {
 			level++;
+			this.health = maxHealth;
 			this.xp = 0;
 			if (level >= 10)
 				level = 10;
