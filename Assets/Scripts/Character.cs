@@ -45,7 +45,7 @@ public class Character : MonoBehaviour
 				avatar.CrossFade("walk-cicle",0.1f);
 			}
 			else {
-				avatar.CrossFade("iddle", 0.5f);
+				avatar.CrossFade("idle", 0.5f);
 			}
 		}
 		oldHealth = health;
