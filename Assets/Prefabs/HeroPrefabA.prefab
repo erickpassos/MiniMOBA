@@ -2287,7 +2287,7 @@ MonoBehaviour:
   creeps: 0
   level: 1
   range: 4
-  damage: 1.5
+  damage: 1.25
   healthTexture: {fileID: 2800000, guid: 6d28d934293344837bfbc57e3b213ce0, type: 3}
   charID: 0
   isHero: 1

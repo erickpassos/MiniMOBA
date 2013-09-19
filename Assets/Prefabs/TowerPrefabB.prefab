@@ -47,8 +47,6 @@ GameObject:
   - 4: {fileID: 400004}
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
-  - 95: {fileID: 9500000}
-  - 65: {fileID: 6500000}
   m_Layer: 0
   m_Name: Tomb03_d
   m_TagString: Untagged
@@ -173,18 +171,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_Mesh: {fileID: 4300000, guid: 3d76bbe2e312a8a4193275e403b9ac42, type: 3}
---- !u!65 &6500000
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: .6205374, y: .725797892, z: 4.6117115}
-  m_Center: {x: -7.74860382e-07, y: -.0526004247, z: 2.30585575}
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 1
@@ -243,18 +229,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!95 &9500000
-Animator:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 3d76bbe2e312a8a4193275e403b9ac42, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 1
-  m_ApplyRootMotion: 1
-  m_AnimatePhysics: 0
 --- !u!108 &10800000
 Light:
   m_ObjectHideFlags: 1
@@ -324,7 +298,7 @@ MonoBehaviour:
   creeps: 0
   level: 1
   range: 8
-  damage: 4.5
+  damage: 2
   healthTexture: {fileID: 2800000, guid: 6d28d934293344837bfbc57e3b213ce0, type: 3}
   charID: -1
   isHero: 0
@@ -365,7 +339,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.20000005
+  m_Radius: .5
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}

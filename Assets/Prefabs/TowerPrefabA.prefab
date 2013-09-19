@@ -298,7 +298,7 @@ MonoBehaviour:
   creeps: 0
   level: 1
   range: 8
-  damage: 4.5
+  damage: 2
   healthTexture: {fileID: 2800000, guid: 6d28d934293344837bfbc57e3b213ce0, type: 3}
   charID: -4
   isHero: 0
@@ -339,7 +339,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.20000005
+  m_Radius: .5
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}

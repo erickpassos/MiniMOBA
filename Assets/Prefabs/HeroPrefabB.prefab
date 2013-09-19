@@ -2098,7 +2098,7 @@ Transform:
   m_GameObject: {fileID: 100144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 400142}
   - {fileID: 400140}
@@ -2287,7 +2287,7 @@ MonoBehaviour:
   creeps: 0
   level: 1
   range: 4
-  damage: 1.5
+  damage: 1.25
   healthTexture: {fileID: 2800000, guid: 6d28d934293344837bfbc57e3b213ce0, type: 3}
   charID: 0
   isHero: 1
